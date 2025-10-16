@@ -354,106 +354,106 @@ nav {
     font-size: 0.95rem;
 }
 
-/* Assignments Section */
-.assignments {
-    padding: 100px 5%;
-    background: rgba(26, 39, 68, 0.5);
-}
+/*!* Assignments Section *!*/
+/*.assignments {*/
+/*    padding: 100px 5%;*/
+/*    background: rgba(26, 39, 68, 0.5);*/
+/*}*/
 
-.assignments h2 {
-    font-size: 2.5rem;
-    color: #4a9eff;
-    margin-bottom: 50px;
-    text-align: center;
-}
+/*.assignments h2 {*/
+/*    font-size: 2.5rem;*/
+/*    color: #4a9eff;*/
+/*    margin-bottom: 50px;*/
+/*    text-align: center;*/
+/*}*/
 
-.assignments-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-    perspective: 1000px;
-}
+/*.assignments-container {*/
+/*    max-width: 1000px;*/
+/*    margin: 0 auto;*/
+/*    position: relative;*/
+/*    perspective: 1000px;*/
+/*}*/
 
-.assignment-cards {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-}
+/*.assignment-cards {*/
+/*    display: flex;*/
+/*    gap: 30px;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
 
-.assignment-card {
-    width: 280px;
-    height: 480px;
-    background: linear-gradient(135deg, #5a7fa8 0%, #7a9fc8 100%);
-    border-radius: 20px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-}
+/*.assignment-card {*/
+/*    width: 280px;*/
+/*    height: 480px;*/
+/*    background: linear-gradient(135deg, #5a7fa8 0%, #7a9fc8 100%);*/
+/*    border-radius: 20px;*/
+/*    padding: 30px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);*/
+/*    transition: all 0.4s ease;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*}*/
 
-.assignment-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
+/*.assignment-card::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 100%);*/
+/*    opacity: 0;*/
+/*    transition: opacity 0.3s ease;*/
+/*}*/
 
-.assignment-card:hover::before {
-    opacity: 1;
-}
+/*.assignment-card:hover::before {*/
+/*    opacity: 1;*/
+/*}*/
 
-.assignment-card:nth-child(1) {
-    transform: translateX(-20px) rotate(-5deg);
-}
+/*.assignment-card:nth-child(1) {*/
+/*    transform: translateX(-20px) rotate(-5deg);*/
+/*}*/
 
-.assignment-card:nth-child(2) {
-    transform: translateY(-20px) scale(1.05);
-    z-index: 2;
-}
+/*.assignment-card:nth-child(2) {*/
+/*    transform: translateY(-20px) scale(1.05);*/
+/*    z-index: 2;*/
+/*}*/
 
-.assignment-card:nth-child(3) {
-    transform: translateX(20px) rotate(5deg);
-}
+/*.assignment-card:nth-child(3) {*/
+/*    transform: translateX(20px) rotate(5deg);*/
+/*}*/
 
-.assignment-card:hover {
-    transform: translateY(-10px) rotate(0deg) scale(1.1);
-    z-index: 10;
-}
+/*.assignment-card:hover {*/
+/*    transform: translateY(-10px) rotate(0deg) scale(1.1);*/
+/*    z-index: 10;*/
+/*}*/
 
-.assignment-header {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+/*.assignment-header {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 10px;*/
+/*}*/
 
-.assignment-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #0a1628;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    letter-spacing: 2px;
-}
+/*.assignment-title {*/
+/*    font-size: 1.1rem;*/
+/*    font-weight: 600;*/
+/*    color: #0a1628;*/
+/*    writing-mode: vertical-lr;*/
+/*    transform: rotate(180deg);*/
+/*    letter-spacing: 2px;*/
+/*}*/
 
-.assignment-label {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 15px;
-    border-radius: 10px;
-    color: #0a1628;
-    font-weight: 600;
-    text-align: center;
-    margin-top: auto;
-}
+/*.assignment-label {*/
+/*    background: rgba(255, 255, 255, 0.9);*/
+/*    padding: 15px;*/
+/*    border-radius: 10px;*/
+/*    color: #0a1628;*/
+/*    font-weight: 600;*/
+/*    text-align: center;*/
+/*    margin-top: auto;*/
+/*}*/
 
 /* Animations */
 @keyframes fadeInLeft {
