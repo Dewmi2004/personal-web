@@ -126,30 +126,38 @@
 </section>
 
 <!-- Assignments Section -->
+<!-- Assignments Section -->
 <section class="assignments" id="assignments">
     <h2>Assignments</h2>
     <div class="assignments-container">
-        <div class="assignment-cards">
-            <div class="assignment-card">
-                <div class="assignment-header">
-                    <div class="assignment-title">FUNDAMENTALS OF PROGRAMMING</div>
-                </div>
+        <div class="assignment-cards" id="wheel">
+            <div class="assignment-card" style="transform: rotateY(0deg) translateZ(400px);">
+                <div class="assignment-title">FUNDAMENTALS OF PROGRAMMING</div>
                 <div class="assignment-label">Fundamentals of Programming</div>
             </div>
-            <div class="assignment-card">
-                <div class="assignment-header">
-                    <div class="assignment-title">WEB DESIGN</div>
-                </div>
+            <div class="assignment-card" style="transform: rotateY(72deg) translateZ(400px);">
+                <div class="assignment-title">WEB DESIGN</div>
                 <div class="assignment-label">Web Design</div>
             </div>
-            <div class="assignment-card">
-                <div class="assignment-header">
-                    <div class="assignment-title">OBJECT ORIENTED PROGRAMMING</div>
-                </div>
+            <div class="assignment-card" style="transform: rotateY(144deg) translateZ(400px);">
+                <div class="assignment-title">OBJECT ORIENTED PROGRAMMING</div>
                 <div class="assignment-label">Object Oriented Programming</div>
+            </div>
+            <div class="assignment-card" style="transform: rotateY(216deg) translateZ(400px);">
+                <div class="assignment-title">DATABASE MANAGEMENT</div>
+                <div class="assignment-label">Database Management</div>
+            </div>
+            <div class="assignment-card" style="transform: rotateY(288deg) translateZ(400px);">
+                <div class="assignment-title">NETWORKING</div>
+                <div class="assignment-label">Networking</div>
             </div>
         </div>
     </div>
+    <div class="controls">
+        <button class="control-btn" id="pauseBtn">Pause</button>
+        <button class="control-btn" id="reverseBtn">Reverse</button>
+    </div>
+    <p class="instruction">🖱️ Drag the wheel to rotate manually</p>
 </section>
 
 <!-- Qualifications Section -->
@@ -200,29 +208,56 @@
     <div class="skills-container">
         <div class="technical-skills">
             <h2>Technical Skills</h2>
-            <div class="tech-icons">
-                <div class="tech-icon" title="Java">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                </div>
-                <div class="tech-icon" title="MySQL">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                </div>
-                <div class="tech-icon" title="JavaScript">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                </div>
-                <div class="tech-icon" title="HTML5">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                </div>
-                <div class="tech-icon" title="CSS3">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                </div>
-                <div class="tech-icon" title="Figma">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
-                </div>
-                <div class="tech-icon" title="GitHub">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            <div class="tech-icons-container">
+                <div class="tech-icons" id="techChain">
+                    <!-- First set -->
+                    <div class="tech-icon" title="Java">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </div>
+                    <div class="tech-icon" title="MySQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    </div>
+                    <div class="tech-icon" title="JavaScript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    </div>
+                    <div class="tech-icon" title="HTML5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    </div>
+                    <div class="tech-icon" title="CSS3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    </div>
+                    <div class="tech-icon" title="Figma">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                    </div>
+                    <div class="tech-icon" title="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    </div>
+
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="tech-icon" title="Java">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </div>
+                    <div class="tech-icon" title="MySQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    </div>
+                    <div class="tech-icon" title="JavaScript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    </div>
+                    <div class="tech-icon" title="HTML5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    </div>
+                    <div class="tech-icon" title="CSS3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    </div>
+                    <div class="tech-icon" title="Figma">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                    </div>
+                    <div class="tech-icon" title="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    </div>
                 </div>
             </div>
+
         </div>
 
         <div class="other-skills-section">
@@ -458,6 +493,113 @@
         el.style.transition = 'all 0.6s ease';
         observer.observe(el);
     });
+
+    // wheel
+
+    const wheel = document.getElementById('wheel');
+    const pauseBtn = document.getElementById('pauseBtn');
+    const reverseBtn = document.getElementById('reverseBtn');
+
+    let isDragging = false;
+    let startX = 0;
+    let currentRotation = 0;
+    let isPaused = false;
+    let isReversed = false;
+
+    // Pause/Resume functionality
+    pauseBtn.addEventListener('click', () => {
+        isPaused = !isPaused;
+        if (isPaused) {
+            wheel.style.animationPlayState = 'paused';
+            pauseBtn.textContent = 'Resume';
+        } else {
+            wheel.style.animationPlayState = 'running';
+            pauseBtn.textContent = 'Pause';
+        }
+    });
+
+    // Reverse direction
+    reverseBtn.addEventListener('click', () => {
+        isReversed = !isReversed;
+        if (isReversed) {
+            wheel.style.animationDirection = 'reverse';
+            reverseBtn.textContent = 'Forward';
+        } else {
+            wheel.style.animationDirection = 'normal';
+            reverseBtn.textContent = 'Reverse';
+        }
+    });
+
+    // Mouse drag functionality
+    wheel.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.clientX;
+        wheel.style.animationPlayState = 'paused';
+        wheel.style.cursor = 'grabbing';
+    });
+
+    window.addEventListener('mouseup', () => {
+        if (isDragging) {
+            isDragging = false;
+            if (!isPaused) {
+                wheel.style.animationPlayState = 'running';
+            }
+            wheel.style.cursor = 'grab';
+        }
+    });
+
+    window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+
+        const deltaX = e.clientX - startX;
+        currentRotation += deltaX * 0.3;
+        wheel.style.transform = `rotateY(${currentRotation}deg)`;
+        startX = e.clientX;
+    });
+
+    // Touch support for mobile
+    wheel.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        startX = e.touches[0].clientX;
+        wheel.style.animationPlayState = 'paused';
+    });
+
+    window.addEventListener('touchend', () => {
+        if (isDragging) {
+            isDragging = false;
+            if (!isPaused) {
+                wheel.style.animationPlayState = 'running';
+            }
+        }
+    });
+
+    window.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+
+        const deltaX = e.touches[0].clientX - startX;
+        currentRotation += deltaX * 0.3;
+        wheel.style.transform = `rotateY(${currentRotation}deg)`;
+        startX = e.touches[0].clientX;
+    });
+
+    // Mouse wheel rotation
+    wheel.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        currentRotation += e.deltaY * 0.1;
+        wheel.style.animationPlayState = 'paused';
+        wheel.style.transform = `rotateY(${currentRotation}deg)`;
+
+        // Resume animation after 1 second of no scrolling
+        clearTimeout(wheel.scrollTimeout);
+        wheel.scrollTimeout = setTimeout(() => {
+            if (!isPaused) {
+                wheel.style.animationPlayState = 'running';
+            }
+        }, 1000);
+    });
+
+    // technical skills
+
 </script>
 </body>
 </html>
