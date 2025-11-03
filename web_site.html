@@ -8,13 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"></head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
 <body>
-<div class="stars"></div>
-<div class="shooting-star"></div>
-<div class="shooting-star"></div>
-<div class="shooting-star"></div>
-<div class="shooting-star"></div>
-<div class="shooting-star"></div>
+<header id="header">
+    <a id="logo">navbar</a>
+    <nav id="nav">
+        <button id="btn"><span id="hamburguer"></span>
+        </button>
+        <ul id="menu">
+            <li><a href="/">about</a></li>
+            <li><a href="/">skills</a></li>
+            <li><a href="/">works</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="wrapper">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+</section>
+
 <!-- Navigation -->
 <nav>
     <div class="logo">
@@ -126,7 +140,6 @@
 </section>
 
 <!-- Assignments Section -->
-<!-- Assignments Section -->
 <section class="assignments" id="assignments">
     <h2>Assignments</h2>
     <div class="assignments-container">
@@ -156,8 +169,11 @@
     <div class="controls">
         <button class="control-btn" id="pauseBtn">Pause</button>
         <button class="control-btn" id="reverseBtn">Reverse</button>
+
     </div>
-    <p class="instruction">🖱️ Drag the wheel to rotate manually</p>
+    <div id="para" >
+        <p >If pause when scroll use side of the page for scroll.</p>
+    </div>
 </section>
 
 <!-- Qualifications Section -->
@@ -167,42 +183,68 @@
         <div class="qualification-card"></div>
         <div class="qualification-card"></div>
         <div class="qualification-card"></div>
-        <div class="qualification-card"></div>
-        <div class="qualification-card"></div>
-        <div class="qualification-card"></div>
+
     </div>
 </section>
 
 <!-- Projects Section -->
-<section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <div class="project-content">
-                <div class="project-number">1:</div>
-                <div class="project-title">Aquarium management System With MVC Architecture</div>
+
+<section class="hero-section" id="projects">
+    <div class="projects-header">
+        <h2>Projects</h2>
+        <p>Explore some of my featured work and creative builds.</p>
+    </div>
+
+    <div class="card-grid">
+        <a class="card" href="#">
+            <div class="card__background" style="background-image: url('images/Screenshot 2025-11-03 111248.png');"></div>
+            <div class="card__content">
+                <p class="card__category">Aquarium Management With MVC Architecture</p>
+                <br>
+                <br>
+                <br>
+                <h5 class="card__heading">Developed an Aquarium Management System using the MVC Architecture to manage customers, fish, plants, tanks, and suppliers efficiently  with Place Order & Inventory Handeling. The system separates data handling, business logic, and user interface, ensuring better scalability, maintainability, and clear code organization.</h5>
             </div>
-        </div>
-        <div class="project-card">
-            <div class="project-content">
-                <div class="project-number">2:</div>
-                <div class="project-title">Aquarium management System With Layerd Architecture</div>
+        </a>
+
+        <a class="card" href="#">
+            <div class="card__background" style="background-image: url('images/Screenshot 2025-11-03 111314.png');"></div>
+            <div class="card__content">
+                <h5 class="card__heading"><p class="card__category">Aquarium Management With Layerd Architecture</p>
+                    <br>
+                    <br>
+                    <br>
+                    <h5 class="card__heading">Developed an Aquarium Management System using the MVC Architecture to manage customers, fish, plants, tanks, and suppliers efficiently  with Place Order & Inventory Handeling. The system separates data handling, business logic, and user interface, ensuring better scalability, maintainability, and clear code organization.</h5>
+                </h5>
             </div>
-        </div>
-        <div class="project-card">
-            <div class="project-content">
-                <div class="project-number">3:</div>
-                <div class="project-title">Supermarket management System With Layerd Architecture</div>
+        </a>
+
+        <a class="card" href="#">
+            <div class="card__background" style="background-image: url('images/Screenshot 2025-11-03 111423.png');"></div>
+            <div class="card__content">
+                <p class="card__category">Grim Theater Food Stall Management with Layerd Architecture & ORM </p>
+                <br>
+                <br>
+                <h5 class="card__heading">
+                    Developed a Grim Theater Halloween Food Stall Management System featuring a spooky-themed interface with customized food items, dynamic pricing, and a unique color scheme inspired by Halloween aesthetics. The system efficiently manages food details, pricing, and orders while maintaining a dark, eerie user experience that enhances the festive atmosphere.
+                </h5>
             </div>
-        </div>
-        <div class="project-card">
-            <div class="project-content">
-                <div class="project-number">4:</div>
-                <div class="project-title">Aquarium management System With Layerd Architecture</div>
+        </a>
+
+        <a class="card" href="#">
+            <div class="card__background" style="background-image: url('images/Screenshot 2025-11-03 111548.png');"></div>
+            <div class="card__content">
+                <p class="card__category">Driving School Management System with Layerd Architecture & ORM</p>
+
+                <br>
+                <h5 class="card__heading">
+                    Developed a Driving School Management System using ORM and Layered Architecture to efficiently manage instructors, courses, lessons, students, and payments. The system integrates data persistence through ORM for seamless database interaction and separates concerns across layers, ensuring better scalability, maintainability, and clean code organization.
+                </h5>
             </div>
-        </div>
+        </a>
     </div>
 </section>
+
 <!-- Skills Section -->
 <section class="skills" id="skills">
     <div class="skills-container">
@@ -210,7 +252,6 @@
             <h2>Technical Skills</h2>
             <div class="tech-icons-container">
                 <div class="tech-icons" id="techChain">
-                    <!-- First set -->
                     <div class="tech-icon" title="Java">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                     </div>
@@ -233,7 +274,6 @@
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
                     </div>
 
-                    <!-- Duplicate set for seamless loop -->
                     <div class="tech-icon" title="Java">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                     </div>
@@ -269,7 +309,7 @@
                     </div>
                     <div class="skill-content">
                         <div class="skill-image">
-                            <img src="https://via.placeholder.com/150/7aafd8/ffffff?text=Entertainment" alt="Entertainment">
+                            <img src="images/sing.jpeg" alt="Entertainment">
                         </div>
                         <div class="skill-description">
                             Engaging in creative and entertaining activities, including theater and music for expression and clarity. Codes themes by emotion and energy to create seamless and engaging thinking and problem-solving skills.
@@ -283,7 +323,7 @@
                     </div>
                     <div class="skill-content">
                         <div class="skill-image">
-                            <img src="https://via.placeholder.com/150/7aafd8/ffffff?text=Sports" alt="Sports">
+                            <img src="images/netball.jpeg" alt="Sports">
                         </div>
                         <div class="skill-description">
                             Engaged in creative and performing arts including singing and the teaching for expression gallery, literature for inspiration and writing skills, and digital art worldwide, collaboration and growth.
@@ -598,7 +638,7 @@
         }, 1000);
     });
 
-    // technical skills
+//back ground
 
 </script>
 </body>
