@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi, I'm Dewmi — a passionate software engineer specializing in Java, JavaFX, and web development." />
+    <meta name="keywords" content="Imasha Dewmi, Software Engineer, Portfolio, Web Developer,Java Script ,CSS ,HTML" />
+    <meta name="author" content="Imasha Dewmi" />
+    <link rel="icon" type="image/x-icon" href="images/Screenshot%202025-10-30%20125206.png" />
     <title>Imasha Dewmi - Software Engineer</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -141,31 +145,36 @@
     <div class="assignments-container">
         <div class="assignment-cards" id="wheel">
             <div class="assignment-card" style="transform: rotateY(0deg) translateZ(400px);">
-                <div class="assignment-title">FUNDAMENTALS OF PROGRAMMING</div>
-                <div class="assignment-label">Fundamentals of Programming</div>
+                <div class="assignment-title"> PROGRAMMING FUNDAMENTALS OF</div>
+                <button class="assignment-label" id="fundamentalsBtn">Fundamentals of Programming</button>
             </div>
-            <div class="assignment-card" style="transform: rotateY(72deg) translateZ(400px);">
+
+            <div class="assignment-card" style="transform: rotateY(60deg) translateZ(400px);">
                 <div class="assignment-title">WEB DESIGN</div>
                 <div class="assignment-label">Web Design</div>
             </div>
-            <div class="assignment-card" style="transform: rotateY(144deg) translateZ(400px);">
-                <div class="assignment-title">OBJECT ORIENTED PROGRAMMING</div>
+            <div class="assignment-card" style="transform: rotateY(120deg) translateZ(400px);">
+                <div class="assignment-title"> ORIENTED PROGRAMMING OBJECT </div>
                 <div class="assignment-label">Object Oriented Programming</div>
             </div>
-            <div class="assignment-card" style="transform: rotateY(216deg) translateZ(400px);">
-                <div class="assignment-title">DATABASE MANAGEMENT</div>
-                <div class="assignment-label">Database Management</div>
+            <div class="assignment-card" style="transform: rotateY(180deg) translateZ(400px);">
+                <div class="assignment-title">NETWORK PROGRAMMING INTRODUCTION TO </div>
+                <div class="assignment-label">Introduction to Network Programming</div>
             </div>
-            <div class="assignment-card" style="transform: rotateY(288deg) translateZ(400px);">
-                <div class="assignment-title">NETWORKING</div>
-                <div class="assignment-label">Networking</div>
+            <div class="assignment-card" style="transform: rotateY(240deg) translateZ(400px);">
+                <div class="assignment-title">RELATIONAL MAPPING OBJECT </div>
+                <div class="assignment-label">Object Relational Mapping</div>
+            </div>
+            <div class="assignment-card" style="transform: rotateY(300deg) translateZ(400px);">
+                <div class="assignment-title"> AND DESIGN PATTERN-1 SOFTWARE ARCHITECTURE</div>
+                <div class="assignment-label">Software Architectures and Design Pattern-1</div>
             </div>
         </div>
+        <div id="assignmentLinksDisplay"></div>
     </div>
     <div class="controls">
         <button class="control-btn" id="pauseBtn">Pause</button>
         <button class="control-btn" id="reverseBtn">Reverse</button>
-
     </div>
     <div id="para" >
         <p >If pause when scroll use side of the page for scroll.</p>
@@ -735,6 +744,7 @@
             navLinks.classList.remove('active');
         }
     });
+
 
 </script>
 </body>
